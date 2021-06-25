@@ -2,7 +2,7 @@ import random
 import threading
 from typing import Union
 
-from LightYagami.modules.helper_funcs.msg_types import Types
+from DaisyX.utils.filters.msg_types import Types
 from LightYagami.modules.sql import BASE, SESSION
 from sqlalchemy import (BigInteger, Boolean, Column, Integer, String,
                         UnicodeText)
