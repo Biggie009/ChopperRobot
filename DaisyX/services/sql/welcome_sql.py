@@ -3,7 +3,7 @@ import threading
 from typing import Union
 
 from DaisyX.utils.filters.msg_types import Types
-from LightYagami.modules.sql import BASE, SESSION
+from DaisyX.services.sql import BASE, SESSION
 from sqlalchemy import (BigInteger, Boolean, Column, Integer, String,
                         UnicodeText)
 
