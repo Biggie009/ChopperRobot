@@ -13,7 +13,7 @@ from telegram.ext import CallbackContext, run_async
 
 from DaisyX import dp
 
-from DaisyX.modules.disable import DisableAbleCommandHandler
+from DaisyX.modules.disabling import DISABLABLE_COMMANDS
 from DaisyX.modules.utils.alternate import typing_action
 
 opener = urllib.request.build_opener()
