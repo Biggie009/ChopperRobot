@@ -187,7 +187,7 @@ STRINGS:
 
   pm_menu:
     start_hi_group: 'Hey Yo! I am Pirate Hunter Roronoa Zoro.'
-    start_hi: "Hey Yo! My name is <b>Roronoa Zoro.</b>\n\n I help in managing groups in telegram.Add me to your group to make Management easier."[https://telegra.ph/file/8d826b00430e1c7298fc6.jpg] 
+    start_hi: "(https://telegra.ph/file/8d826b00430e1c7298fc6.jpg)Hey Yo! My name is <b>Roronoa Zoro.</b>\n\n I help in managing groups in telegram. Managing anime based communities is my forte. Add me to your group to make Management easier."(https://telegra.ph/file/8d826b00430e1c7298fc6.jpg) 
     btn_source: "Anime Channel!"
     btn_help: "❔ Help"
     btn_lang: "US Language"
