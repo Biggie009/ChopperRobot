@@ -614,8 +614,7 @@ STRINGS:
     # havent_set_rules_note: "You haven't set the rules note yet."
     # success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
-    default_welcome:
-    "Player to player, Whatup {mention} !",  
+    default_welcome: "Player to player, Whatup {mention} !",  
     "Ready Player {mention}",
     "{mention},I'll play with your soul like ether.",
     "I prove you lost already,{mention} .",
