@@ -29,6 +29,7 @@ PyYAML>5.0
 coloredlogs
 loguru
 babel
+python-telegram-bot==12.8
 captcha
 async-timeout
 regex
