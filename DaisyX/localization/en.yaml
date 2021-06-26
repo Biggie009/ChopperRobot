@@ -614,7 +614,7 @@ STRINGS:
     # havent_set_rules_note: "You haven't set the rules note yet."
     # success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
-    default_welcome: [
+    default_welcome:
     "Player to player, Whatup {mention} !",  
     "Ready Player {mention}",
     "{mention},I'll play with your soul like ether.",
@@ -755,9 +755,9 @@ STRINGS:
     "{mention}, welcome to the hidden leaf village!", 
     "In the jungle, you must wait...until the dice read five or eight.",  #Jumanji stuff
     "{mention} got his mind in the right place.",
-    "{mention},blows up, no guts, left chest, face gone ", 
-]
-    thank_for_add: "Thanks for adding me to your group! 
+    "{mention},blows up, no guts, left chest, face gone "
+
+    thank_for_add: "Thanks for adding me to your group!" 
     default_security_note: "Welcome {mention}! Please press button below to verify yourself as human!"
 
     bool_invalid_arg: Invalid argument, expected <code>on</code>/<code>off</code>.
