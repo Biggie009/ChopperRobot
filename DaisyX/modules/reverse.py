@@ -11,7 +11,7 @@ from telegram import InputMediaPhoto, TelegramError
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from DaisyX import dispatcher
+from DaisyX import dp
 
 from DaisyX.modules.disable import DisableAbleCommandHandler
 from DaisyX.modules.utils.alternate import typing_action
