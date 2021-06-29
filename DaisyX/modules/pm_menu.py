@@ -32,6 +32,8 @@ from .language import select_lang_keyboard
 from .utils.disable import disableable_dec
 from .utils.language import get_strings_dec
 
+ZORO_IMG = "https://telegra.ph/file/8d826b00430e1c7298fc6.jpg"
+
 helpmenu_cb = CallbackData("helpmenu", "mod")
 
 
@@ -52,7 +54,7 @@ async def start_group_cmd(message, strings):
 
 @register(cmds="start", no_args=True, only_pm=True)
 async def start_cmd(message):
-    await message.reply_image(https://telegra.ph/file/8d826b00430e1c7298fc6.jpg)
+    await message.reply_photo(ZORO_IMG)
     await get_start_func(message)
 
 
