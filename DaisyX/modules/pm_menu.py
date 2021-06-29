@@ -52,7 +52,7 @@ async def start_group_cmd(message, strings):
 
 @register(cmds="start", no_args=True, only_pm=True)
 async def start_cmd(message):
-    await message.reply_sticker(random.choice(STICKERS))
+    await message.reply_image(https://telegra.ph/file/8d826b00430e1c7298fc6.jpg)
     await get_start_func(message)
 
 
@@ -76,7 +76,7 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(
             "☠Add Zoro to your group",
-            url=f"https://telegram.me/daisyxbot?startgroup=true",
+            url=f"https://telegram.me/roronoarobot?startgroup=true",
         )
     )
     # Handle error when user click the button 2 or more times simultaneously
@@ -118,7 +118,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/roronoarobot?start")
+        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
