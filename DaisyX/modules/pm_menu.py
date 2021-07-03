@@ -42,14 +42,16 @@ async def get_start_func(message, strings, edit=False):
 
     task = msg.edit_text if edit else msg.reply
     buttons = InlineKeyboardMarkup()
-    buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
+    buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"),
+                InlineKeyboardButton("☏Chopper Support", url="https://t.me/roronoa_support"),
+               )
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton("∞Anime Channel ", url="https://t.me/Anime_Warden"),
         )
     buttons.add(
         InlineKeyboardButton(
-            "☠Add Zoro to your Group",
+            "☠Add Chopper to your Group",
             url=f"https://telegram.me/roronoarobot?startgroup=true",
         )
     )
@@ -92,7 +94,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
+        InlineKeyboardButton(text=text, url="https://t.me/roronoarobot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
