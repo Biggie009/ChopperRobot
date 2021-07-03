@@ -66,10 +66,7 @@ async def get_start_func(message, strings, edit=False):
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/DaisyXUpdates"),
-        InlineKeyboardButton(
-            strings["btn_group"], url="https://t.me/DaisySupport_Official"
-        ),
+        InlineKeyboardButton("👥 Support Grup", url="https://t.me/DaisyXUpdates"),
     )
     buttons.add(
         InlineKeyboardButton(
