@@ -54,7 +54,7 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(
             "☠Add Chopper to your Group",
-            url=f"https://telegram.me/roronoarobot?startgroup=true",
+            url=f"https://telegram.me/chopperRobot?startgroup=true",
         )
     )
     # Handle error when user click the button 2 or more times simultaneously
@@ -96,7 +96,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/roronoarobot?start")
+        InlineKeyboardButton(text=text, url="https://t.me/chopperRobot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
