@@ -62,7 +62,7 @@ async def _(event):
 
         return
 
-    chat = "@DetectiveInfoBot"
+    chat = "Sangmatainfo_bot"
     uid = reply_message.sender_id
     reply_message.sender
 
@@ -88,8 +88,14 @@ async def _(event):
             responses = await silently_send_message(conv, f"/detect_id {uid}")
         except YouBlockedUserError:
 
-            await event.reply("```Please unblock @DetectiveInfoBot and try again```")
+            await event.reply("```Please unblock @Sangmatainfo_bot and try again```")
 
             return
         await lol.edit(f"{responses.text}")
         # await lol.edit(f"{response.message.message}")
+        
+        __help__ = """
+ • `/sg` <reply to an user>:- Get Name history of an User.
+"""
+
+__mod_name__ = "SangMata"
