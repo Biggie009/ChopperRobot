@@ -5,17 +5,17 @@ language_info:
 STRINGS:
   notes:
     # /save
-    note_saved: "🗒 Note <code>{note_name}</code> is saved in <b>{chat_title}</b>!"
+    note_saved: "🗒 Note <code>{note_name}</code> saved in <b>{chat_title}</b>!"
     note_updated: "🗒 Note <code>{note_name}</code> updated in <b>{chat_title}</b>!"
     you_can_get_note: "\nYou can retrieve this note by using <code>/get {note_name}</code>, or <code>#{note_name}</code>"
     # Translator note: please keep sure that you don't have space in the end of string
     note_aliases: "\nNote aliases:"
-    blank_note: "You can't save a blank note, not allowed!"
-    notename_cant_contain: "Name of the note can't contain \"<code>{symbol}</code>\"!"
+    blank_note: "Saving blank note is not allowed!"
+    notename_cant_contain: "Note name can't contain \"<code>{symbol}</code>\"!"
 
     # /get
-    cant_find_note: Note can't be found in <b>{chat_name}</b>!
-    no_note: "Note can't be found."
+    cant_find_note: I can't find this note in <b>{chat_name}</b>!
+    no_note: "Can't find that note."
     no_notes_pattern: "No notes found by pattern <code>%s</code>"
     u_mean: "\nDid you mean <code>#{note_name}</code>?"
 
@@ -35,7 +35,7 @@ STRINGS:
 
     # /clearall
     clear_all_text: "This will remove all notes from {chat_name}. Are you sure?"
-    clearall_btn_yes: "Yes. Just do it."
+    clearall_btn_yes: "Yes. Remove all my notes!"
     clearall_btn_no: "No!"
     clearall_done: "All (<code>{num}</code>) notes in {chat_name} were removed!"
 
@@ -153,17 +153,17 @@ STRINGS:
     filter_handle_rsn: Automated filter action!
 
   msg_deleting:
-    no_rights_purge: "You don't possess the right to purge in this group."
+    no_rights_purge: "You don't have enough rights to purge in this group!"
     reply_to_msg: "Reply to a message to delete!"
     purge_error: "I can't continue purge, mostly because you started purge from a message that was sent older than 2 days."
-    fast_purge_done: "<b>Fast purge finished !</b>\nSelected message will be removed in 5 seconds."
-    purge_user_done: "Deleted all the messages of {user}"
+    fast_purge_done: "<b>Fast purge completed!</b>\nThis message will be removed in 5 seconds."
+    purge_user_done: "All messages from {user} were successfully deleted!"
   misc:
     your_id: "Your ID: <code>{id}</code>\n"
     chat_id: "Group ID: <code>{id}</code>\n"
     user_id: "{user}'s ID: <code>{id}</code>\n"
     conn_chat_id: "Current connected chat ID: <code>{id}</code>"
-    help_btn: "Click for help!"
+    help_btn: "Click me for help!"
     help_txt: "Click the button below for help!"
 
     delmsg_filter_title: 'Delete the message'
@@ -174,29 +174,29 @@ STRINGS:
     expected_text: Expected a text message!
 
   promotes:
-    promote_success: "Successfully promoted {user} in {chat_name}!"
-    promote_title: "\nWith custom title <code>{role}</code>!"
-    rank_to_loong: "Custom title cannot have more than 16 symbols"
-    promote_failed: "I can't promote since I don't have enough rights."
-    demote_success: "Successfully demoted {user} in {chat_name}."
-    demote_not_admin: "Selected user isn't an admin"
-    demote_failed: "Failed to demote selected user.Check if I have enough rights else the following person is promoted by someone else."
-    cant_get_user: "I coudn't get to the user.Try replying to his messages."
-    cant_promote_yourself: "You can't promote yourself,R-word."
-    emoji_not_allowed: "Custom titles can't contain emojis."
+    promote_success: "{user} was successfully promoted in {chat_name}!"
+    promote_title: "\nWith custom role <code>{role}</code>!"
+    rank_to_loong: "Custom role text cannot be longer than 16 symbols."
+    promote_failed: "Promotion failed! Check if I have rights to."
+    demote_success: "{user} was successfully demoted in {chat_name}!"
+    demote_not_admin: "That user isn't admin."
+    demote_failed: "Demotion failed. Maybe I can't demote or the person is promoted by someone else?"
+    cant_get_user: "I couldn't get the user! If you mind, please reply to his message and try again."
+    cant_promote_yourself: "You can't promote yourself."
+    emoji_not_allowed: "I'm sorry, but admin roles can't have emojis 😞"
 
   pm_menu:
-    start_hi_group: "Hey Yo! I am Pirate Hunter Roronoa Zoro"
-    start_hi: " Hey Yo! My name is <b>Roronoa Zoro.</b>\nI help in managing groups in telegram. Managing anime-based communities is my forte. Add me to your group to make Management easier."
-    btn_source: "∞Anime Channel!"
+    start_hi_group: 'Hey there! My name is Daisy'
+    start_hi: "Hey there! My name is <b>Daisy.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"
+    btn_source: "📜 Source code"
     btn_help: "❔ Help"
-    btn_lang: "✤Select Language"
-    btn_group: "☮Zoro Support"
+    btn_lang: "🇺🇸 Language"
+    btn_channel: "🙋‍♀️ Daisy News"
     btn_group_help: "Click me for help!"
-    back: "BACK"
+    back: Back
 
     # /help
-    help_header: "Hey Yo!Captain. I am <b>Zoro<b>. Managing Anime-based communities is my forte. Add me to your group to let me assist you."
+    help_header: "Hi Boss! I'm <b>Daisy</b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you"
     click_btn: Click here
 
   disable:
@@ -204,12 +204,12 @@ STRINGS:
     disablable: "<b>Disable-able commands:</b>\n"
 
     #/disabled
-    no_disabled_cmds: "There are no diasbled commands in <b>{chat_name}</b>!"
+    no_disabled_cmds: No disabled commands in <b>{chat_name}</b>!
     disabled_list: "<b>Disabled commands in {chat_name}:</b>\n"
 
     #/disable
-    wot_to_disable: "What is it that you want to disable?"
-    already_disabled: "Following command is already disabled."
+    wot_to_disable: "What do you want to disable?"
+    already_disabled: "This command is already disabled!"
     disabled: "Command <code>{cmd}</code> was disabled in <b>{chat_name}</b>!"
 
     #/enable
@@ -220,16 +220,16 @@ STRINGS:
     #/enableall
     not_disabled_anything: "Nothing was disabled in <b>{chat_title}</b>!"
     enable_all_text: "This will enable all commands in the <b>{chat_name}</b>. Are you sure?"
-    enable_all_btn_yes: "Yes. Enable em' all."
+    enable_all_btn_yes: "Yes. Enable all commands!"
     enable_all_btn_no: "No!"
     enable_all_done: "All (<code>{num}</code>) commands were enabled in the <b>{chat_name}</b>!"
   bot_rights:
-    change_info: "I don't possess the right to change the group info.Make me an admin with that right first."
-    edit_messages: "I don't have the right to edit messages here."
+    change_info: "I don't have rights to change group info, please make me admin with that right."
+    edit_messages: "I don't have rights to edit messages!"
     delete_messages: "I don't have rights to delete messages here."
-    ban_user: "I don't possess the right to Ban users here.Make me admin with the following right."
-    pin_messages: "I can't pin messages here.Make me admin with that right."
-    add_admins: "I can't add admins here.Make sure I am an admin with that right."
+    ban_user: "I don't have rights to ban users, please make me admin with that right."
+    pin_messages: "I don't have rights to pin messages, please make me admin with that right."
+    add_admins: "I don't have rights to add admins, please make me admin with that right."
   feds:
     # decorators
     need_fed_admin: "You are not an admin in <b>{name}</b> federation"
@@ -237,8 +237,8 @@ STRINGS:
     cant_get_user: "Sorry, I can't get that user, try using their user ID"
 
     # /fnew
-    fed_name_long: "That federation name is too big.It can't be more than 60 symbols!"
-    can_only_1_fed: "Users can create only 1 fed.Remove one first to create another."
+    fed_name_long: "Federation name can't be longer than 60 symbols!"
+    can_only_1_fed: "Users can only create 1 federation, please remove one."
     name_not_avaible: "Federation with name <code>{name}</code> already exits! Please use another name."
     created_fed: |
       Congrats, you have successfully created a federation.
@@ -327,8 +327,8 @@ STRINGS:
 
     # /fban
     user_wl: "This user is whitelisted from banning."
-    fban_self: "That's a nice show.R-Word."
-    fban_creator: "Oh we playin' jokes here?!"
+    fban_self: "That's a nice show!"
+    fban_creator: "How can I ban the federation creator?! I don't think it's gonna be funny."
     fban_fed_admin: "I'm not going to ban a federation admin from their own fed!"
     update_fban: "This user was already fbanned therefore I am updating the reason to <code>{reason}</code>"
     already_fbanned: "{user} already banned in this federation."
@@ -428,11 +428,11 @@ STRINGS:
 
 
   reports:
-    user_user_admin: "Why do you need to report someone.You're an admin here."
+    user_user_admin: "You're an admin here, why'd you need to report someone?.."
     user_is_whitelisted: "You're a whitelisted user, why'd you need to report someone?.."
     reports_disabled: "Reports are currently <b>disabled</b> in this group."
     no_user_to_report: "Which user you want to report?"
-    report_admin: "Oi!What are you trying to do by reporting <b>admins</b>."
+    report_admin: "You <b>cannot</b> report admins."
     report_whitedlisted: "You <b>cannot</b> report a whitelisted user."
     reported_user: "<b>Reported</b> {user} to admins."
     reported_reason: "\n<b>Reason:</b>\n<code>{reason}</code>"
@@ -454,8 +454,8 @@ STRINGS:
     see_translators: 👥 See translators
     back: Back
   connections:
-    pm_connected: "Successfully connected your PM to <b>{chat_name}</b>!"
-    connected_pm_to_me: "Your PM has been successfully connected to <b>{chat_name}</b>! PM me to start using connection."
+    pm_connected: "Your PM has been successfully connected to <b>{chat_name}</b>!"
+    connected_pm_to_me: "Your PM has been successfully connected to <b>{chat_name}</b>! Please pm me to start using connection."
     chat_connection_tlt: "<b>Chat connection</b>\n"
     connected_chat: |
       <b>Current connected chat:</b>
@@ -488,7 +488,7 @@ STRINGS:
       Please click below button to connect!
     click_here: Click here!
   global:
-    u_not_admin: You shoudl be an admin to execute this!
+    u_not_admin: You should be an admin to do this!
 
     # Rights
     bot_no_right:not_admin: I'm not a admin!
@@ -540,22 +540,22 @@ STRINGS:
     big_file: Only files under 50 MB are supported!
     started_importing: Importing started! Please wait...
     bad_file: Bad file! Expected <code>'general'</code> column.
-    file_version_so_new: Exported file version is newer than what Zoro currently supports!
+    file_version_so_new: Exported file version is newer than what Daisy currently supports!
     imports_locked: Please wait %s before using imports again!
     import_done: Import done!
   restrictions:
     user_not_in_chat: User is not in this chat!
 
     # Kicks
-    kick_DaisyX: You really want to try that?Oi?
-    kick_admin: Looke at that..They are trying to kick an admin.
+    kick_DaisyX: Instead of trying kick me you could spend your time better. Thats just boring.
+    kick_admin: Kicking admin is not best idea thought.
     kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
     user_kicked: "{user} was kicked by {admin} in {chat_name}."
 
     # Mutes
-    mute_DaisyX: Well, why don't you shut yer' trap!
-    mute_admin: Oou you want an admin muted now ehh??
-    mute_self: Just tell me what are you high on.
+    mute_DaisyX: Actually, I'll be happy to shut up you instead.
+    mute_admin: If you think you can shut up an admin, you are wrong!
+    mute_self: If you want to mute yourself - just stop talking! Better to thought a fool than open your mouth and remove all doubt.
     user_muted: "{user} was muted by {admin} in {chat_name}."
     unmute_DaisyX: Actually, I'm not muted.
     unmute_admin: Haha no, try muting him first!
@@ -563,11 +563,11 @@ STRINGS:
     user_unmuted: "{user} was unmuted by {admin} in {chat_name}."
 
     # Bans
-    ban_DaisyX: No, don't do me like that,and ask the creator to do it if you really are going to do it.
-    ban_admin: Heh?? I think we should start be <code>/demote</code> them first."
-    ban_self: You High??
+    ban_DaisyX: No, I won't do it! Ask the chat creator to do it!
+    ban_admin: Haha, let's <code>/demote</code> him first.
+    ban_self: Why are you trying to ban yourself?
     user_banned: "{user} was banned by {admin} in {chat_name}."
-    unban_DaisyX: See,see am not banned.
+    unban_DaisyX: Actually, I'm not banned.
     unban_admin: Haha no, try banning him first!
     unban_self: Should I ban you first?
     user_unband: "{user} was unbanned by {admin} in {chat_name}."
@@ -604,7 +604,7 @@ STRINGS:
     not_found: Rules were not found!
 
     # Callback
-    user_blocked: "Come PM and type /start."
+    user_blocked: "Write /start in my PM!"
     rules_was_pmed: Rules were sent to your PM!
 
     # cannot_find_note: "I can't find the note <code>{}</code>"
@@ -614,9 +614,8 @@ STRINGS:
     # havent_set_rules_note: "You haven't set the rules note yet."
     # success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
-    default_welcome: "Bungee gum has the property of both rubber and gum.Don't tell me you ain't knowing that {mention}" 
-    
-    thank_for_add: "Thanks for adding me to your group!" 
+    default_welcome: "Welcome {mention}! How are you?"
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @DaisyXUpdates."
     default_security_note: "Welcome {mention}! Please press button below to verify yourself as human!"
 
     bool_invalid_arg: Invalid argument, expected <code>on</code>/<code>off</code>.
@@ -746,16 +745,9 @@ STRINGS:
     configuration_info:with_time: Antiflood is configured in this chat, those who send {count} message within {time} will be {action}!
     configuration_info: Antiflood is configured in this chat, those who send {count} consecutively will be {action}!
     ban: banned
-    tmute: tmuted
-    tban: tbanned
     mute: muted
     kick: kicked
 
     # /setfloodaction
     invalid_args: "Unsupported action, expected {supported_actions}!"
     setfloodaction_success: "Successfully updated flood action to <b>{action}</b>!"
-    
-  afk:
-    is_afk: "{user} is AFK!\nReason: {reason}"
-    unafk: "{user} is not AFK anymore!"
-    afk_anon: "AFK mode cannot be used as an anonymous administrator."
