@@ -45,13 +45,11 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
+        InlineKeyboardButton("∞Anime Channel ", url="https://t.me/Anime_Warden"),
         )
     buttons.add(
-        InlineKeyboardButton(" Anime Channel ", url="https://t.me/DaisyXUpdates"),
-    )
-    buttons.add(
         InlineKeyboardButton(
-            "Add Zoro to your Group",
+            "☠Add Zoro to your Group",
             url=f"https://telegram.me/roronoarobot?startgroup=true",
         )
     )
