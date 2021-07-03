@@ -15,6 +15,7 @@ from .utils.language import get_strings_dec
 
 helpmenu_cb = CallbackData("helpmenu", "mod")
 
+CHOPPER_IMG="https://telegra.ph/file/183601688de1bb02ac149.jpg"
 
 def help_markup(modules):
     markup = InlineKeyboardMarkup()
@@ -33,6 +34,7 @@ async def start_group_cmd(message, strings):
 
 @register(cmds="start", no_args=True, only_pm=True)
 async def start_cmd(message):
+    await message.reply_photo(CHOPPER_IMG)
     await get_start_func(message)
 
 
