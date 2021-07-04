@@ -193,7 +193,7 @@ Disabling module is allow you to disable certain commands from be executed by us
 
 <b>Examples:</b>
 <code>/disable help</code>
-It would disable usauge of <code>/help</code> command in the chat!
+It would disable usage of <code>/help</code> command in the chat!
 
 <code>/enable help</code>
 This enables previously disable command <code>/help</code>.
