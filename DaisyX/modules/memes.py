@@ -1,6 +1,3 @@
-# This file is copied from @Missjuliarobot
-# Full credits to original author
-
 import asyncio
 import io
 import json
@@ -1757,7 +1754,6 @@ file_helpo = file_help.replace("_", " ")
 
 __help__ = """
 **Some memes command, find it all out yourself !**
-
  - /owo: OWO de text
  - /stretch: STRETCH de text
  - /clapmoji: Type in reply to a message and see magic
