@@ -45,15 +45,15 @@ async def get_start_func(message, strings, edit=False):
     task = msg.edit_text if edit else msg.reply
     buttons = InlineKeyboardMarkup()
     buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"),
-                InlineKeyboardButton("☏Chopper Support", url="https://t.me/roronoa_support"),
+                InlineKeyboardButton("✞Chopper Support", url="https://t.me/chopper_support"),
                )
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
-        InlineKeyboardButton("∞Anime Channel ", url="https://t.me/Anime_Warden"),
+        InlineKeyboardButton("☮Anime Channel ", url="https://t.me/Anime_Warden"),
         )
     buttons.add(
         InlineKeyboardButton(
-            "☠Add Chopper to your Group",
+            "☣Add Chopper to your Group",
             url=f"https://telegram.me/chopperRobot?startgroup=true",
         )
     )
@@ -110,7 +110,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="🏃‍♂️ Back", callback_data="get_help")
+        InlineKeyboardButton(text="Back", callback_data="get_help")
     )
     with suppress(MessageNotModified):
         await query.message.edit_text(
