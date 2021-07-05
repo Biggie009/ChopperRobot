@@ -1,22 +1,3 @@
-# Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 TeamDaisyX
-# Copyright (C) 2020 Inuka Asith
-
-# This file is part of Daisy (Telegram Bot)
-
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 import asyncio
 import html
 import os
@@ -24,9 +5,8 @@ import sys
 
 import rapidjson
 import requests
-from LEGENDX import ID
 
-from DaisyX import DAISY_VERSION, bot, dp
+from DaisyX import DAISY_VERSION, OWNER_ID, bot, dp
 from DaisyX.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from DaisyX.modules import LOADED_MODULES
 from DaisyX.services.mongo import db, mongodb
@@ -217,7 +197,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "logs/DaisyX.log"
+    input_str = "logs/daisy.log"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
@@ -237,8 +217,8 @@ async def get_event(message):
 
 @register(cmds="stats", is_op=True)
 async def stats(message):
-    if message.from_user.id == ID:
-        text = f"<b>Daisy {DAISY_VERSION} stats</b>\n"
+    if message.from_user.id in OWNER_ID:
+        text = f"<b>Chopper {DAISY_VERSION} stats</b>\n"
 
         for module in [m for m in LOADED_MODULES if hasattr(m, "__stats__")]:
             text += await module.__stats__()
@@ -275,6 +255,6 @@ async def __stats__():
 
 @get_strings_dec("owner_stuff")
 async def __user_info__(message, user_id, strings):
-    global LEGENDX22
-    if user_id == ID:
+    global skemmers
+    if user_id in skemmers:
         return strings["sudo_crown"]
