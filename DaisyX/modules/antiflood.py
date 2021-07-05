@@ -375,7 +375,7 @@ async def __import__(chat_id: int, data: dict):  # noqa
 __mod_name__ = "AntiFlood"
 
 __help__ = """
-Spammers!!!!Fookin Spammers.Every group hates them.With this they cant't do anything.
+A module to get make your group Spam-free.
 
 Antiflood allows you to take action on users that send more than x messages in a row.
 
