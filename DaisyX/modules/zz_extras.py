@@ -1,6 +1,6 @@
-__mod_name__ = "🛠 Extras"
+__mod_name__ = "Extras"
 __help__ = """
-The module that contains extra tools that help you to do many cool stuff.
+Just some extra commands to do some extra stuff.
 
 <b> Available Commands </b>
 
