@@ -20,7 +20,7 @@ STRINGS:
     u_mean: "\nDid you mean <code>#{note_name}</code>?"
 
     # /notes
-    notelist_no_notes: "There aren't any notes in <b>{chat_title}</b>!"
+    notelist_no_notes: "There ain't a lot of notes in <b>{chat_title}</b>!"
     notelist_header: "<b>Notes in {chat_name}</b>:"
     notes_in_private: "Click below button to get notes list."
     notelist_search: |
@@ -77,7 +77,7 @@ STRINGS:
     #delmsg_no_arg: "deletemsg button can contain only 'admin' or 'user' argument!"
     #bot_msg: "I'm sorry, I am not able to get this message, probably this a other bot's message, so I can't save it."
   filters:
-    no_filters_found: "No filters was found in <b>{chat_name}</b>!"
+    no_filters_found: "No filter found in <b>{chat_name}</b>!"
 
     # /addfilter
     anon_detected: Being anonymous admin, you cannot add new filters, use connections instead.
@@ -106,18 +106,18 @@ STRINGS:
 
   warns:
     # /warn
-    warn_sofi: "Haha no way to warn myself!"
-    warn_self: "Do you wanna warn yourself? Just leave the chat then."
-    warn_admin: "Well.. you are wrong. You can't warn an admin."
-    warn: "{admin} has warned {user} in <b>{chat_name}</b>\n"
-    warn_bun: "Warnings has been exceeded! {user} has been banned!"
+    warn_sofi: "You want me to warn meself?No way!"
+    warn_self: "You want to warn yourself? Baka! Leave the chat already."
+    warn_admin: "Imma stop you right there. That's an admin."
+    warn: "{admin} warned {user} in <b>{chat_name}</b>\n"
+    warn_bun: "Too many warnings..! {user} has been banned!"
     warn_num: "Warns: {curr_warns}/{max_warns}\n"
     warn_rsn: "Reason: <code>{reason}</code>\n"
     max_warn_exceeded: Warnings has been exceeded! {user} has been {action}!
     max_warn_exceeded:tmute: Warnings has been exceeded! {user} has been tmuted for {time}!
 
     # warn rmv callback
-    warn_no_admin_alert: "⚠ You are NOT admin and cannot remove warnings!"
+    warn_no_admin_alert: "⚠ Try being an admin first.!"
     warn_btn_rmvl_success: "✅ Warning removed by {admin}!"
 
     # /warns
@@ -134,7 +134,7 @@ STRINGS:
     # /delwarns
     purged_warns: "{admin} reset <code>{num}</code> warns of {user} in <b>{chat_title}</b>!"
     usr_no_wrn: "{user} doesn't have any warns to reset."
-    rst_wrn_sofi: 'Daisy never had warns to reset.'
+    rst_wrn_sofi: 'Chopper never had warns to reset.'
     not_digit: Warnlimits should be digits!
 
     # /warnmode
@@ -153,7 +153,7 @@ STRINGS:
     filter_handle_rsn: Automated filter action!
 
   msg_deleting:
-    no_rights_purge: "You don't have enough rights to purge in this group!"
+    no_rights_purge: "You can't purge here. You ain't got rights dear."
     reply_to_msg: "Reply to a message to delete!"
     purge_error: "I can't continue purge, mostly because you started purge from a message that was sent older than 2 days."
     fast_purge_done: "<b>Fast purge completed!</b>\nThis message will be removed in 5 seconds."
@@ -195,7 +195,7 @@ STRINGS:
     back: Back
 
     # /help
-    help_header: "Hey Captain. I'm <b>Chopper</b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you"
+    help_header: "Hey Captain. I'm <b>Chopper</b>. Managing anime-based communities is my forte. Add me to your group so I can accompany you"
     click_btn: Click here
 
   disable:
@@ -223,12 +223,12 @@ STRINGS:
     enable_all_btn_no: "No!"
     enable_all_done: "All (<code>{num}</code>) commands were enabled in the <b>{chat_name}</b>!"
   bot_rights:
-    change_info: "I don't have rights to change group info, please make me admin with that right."
-    edit_messages: "I don't have rights to edit messages!"
-    delete_messages: "I don't have rights to delete messages here."
-    ban_user: "I don't have rights to ban users, please make me admin with that right."
+    change_info: "I don't posses the right to change group info. Kindly make me admin with that right."
+    edit_messages: "No right to edit messages!"
+    delete_messages: "I ain't got the right to delete messages here."
+    ban_user: "I can't ban users here, I am lacking the right to do so." 
     pin_messages: "I don't have rights to pin messages, please make me admin with that right."
-    add_admins: "I don't have rights to add admins, please make me admin with that right."
+    add_admins: "I don't have the right to make people admin here. Kindly give me that right."
   feds:
     # decorators
     need_fed_admin: "You are not an admin in <b>{name}</b> federation"
@@ -430,7 +430,7 @@ STRINGS:
     user_user_admin: "You're an admin here, why'd you need to report someone?.."
     user_is_whitelisted: "You're a whitelisted user, why'd you need to report someone?.."
     reports_disabled: "Reports are currently <b>disabled</b> in this group."
-    no_user_to_report: "Which user you want to report?"
+    no_user_to_report: "Who do you want to report?"
     report_admin: "You <b>cannot</b> report admins."
     report_whitedlisted: "You <b>cannot</b> report a whitelisted user."
     reported_user: "<b>Reported</b> {user} to admins."
@@ -546,14 +546,14 @@ STRINGS:
     user_not_in_chat: User is not in this chat!
 
     # Kicks
-    kick_DaisyX: Instead of trying kick me you could spend your time better. Thats just boring.
-    kick_admin: Kicking admin is not best idea thought.
-    kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
+    kick_DaisyX: Do something else instead to kicking me!Konoyaro
+    kick_admin: You want to kick an admin.That is nice.
+    kick_self: You want to kick yerself.Interesting (R-Word)
     user_kicked: "{user} was kicked by {admin} in {chat_name}."
 
     # Mutes
     mute_DaisyX: Actually, I'll be happy to shut up you instead.
-    mute_admin: If you think you can shut up an admin, you are wrong!
+    mute_admin: This player right here wants to mute an admin y'all
     mute_self: If you want to mute yourself - just stop talking! Better to thought a fool than open your mouth and remove all doubt.
     user_muted: "{user} was muted by {admin} in {chat_name}."
     unmute_DaisyX: Actually, I'm not muted.
