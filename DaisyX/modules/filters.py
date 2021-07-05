@@ -430,7 +430,7 @@ __mod_name__ = "Filters"
 
 __help__ = """
 <b> GENERAL FILTERS </b>
-Filter module is great for everything! filter in here is used to filter words or sentences in your chat - send notes, warn, ban those!
+Filter module is great for everything! Filter in here is used to filter words or sentences in your chat - send notes, warn, ban those!
 <i> General (Admins):</i>
 - /addfilter (word/sentence): This is used to add filters.
 - /delfilter (word/sentence): Use this command to remove a specific filter.
