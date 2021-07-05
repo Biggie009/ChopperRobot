@@ -82,7 +82,7 @@ __mod_name__ = "Reports"
 __help__ = """
 We're all busy people who don't have time to monitor our groups 24/7. But how do you react if someone in your group is spamming?
 
-Presenting reports; if someone in your group thinks someone needs reporting, they now have an easy way to call all admins.
+If someone in your groups needs to be reported. Members can reach you through this.
 
 <b>Available commands:</b>
 - /report (?text): Reports
